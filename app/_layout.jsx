@@ -1,5 +1,5 @@
-import { Slot, Stack } from 'expo-router';
-import { StyleSheet, Text, useColorScheme, View } from 'react-native';
+import { Stack } from 'expo-router';
+import { useColorScheme } from 'react-native';
 
 import { Colors } from '../constants/Colors';
 import { StatusBar } from 'expo-status-bar';
@@ -16,9 +16,6 @@ const RootLayout = () => {
 						backgroundColor: theme.navBackground,
 					},
 					headerTintColor: theme.title,
-					headerTitleStyle: {
-						fontWeight: 'bold',
-					},
 				}}
 			>
 				<Stack.Screen
@@ -28,16 +25,15 @@ const RootLayout = () => {
 					}}
 				/>
 				<Stack.Screen
-					name='about'
+					name='(auth)'
 					options={{
-						title: 'Abouts',
+						headerShown: false,
 					}}
 				/>
-
 				<Stack.Screen
-					name='settings/index'
+					name='(dashboard)'
 					options={{
-						title: 'Settings',
+						headerShown: false,
 					}}
 				/>
 			</Stack>
@@ -46,5 +42,3 @@ const RootLayout = () => {
 };
 
 export default RootLayout;
-
-const styles = StyleSheet.create({});

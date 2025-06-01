@@ -21,11 +21,14 @@ const Home = () => {
 			<ThemeCard style={styles.card}>
 				<ThemeText>Card Sample</ThemeText>
 			</ThemeCard>
-			<Link href='/about' style={styles.link}>
-				<ThemeText>Go to About</ThemeText>
+			<Link href='/login' style={styles.link}>
+				<ThemeText>Go to Login</ThemeText>
 			</Link>
-			<Link href='/settings' style={styles.link}>
-				<ThemeText>Go to Settings</ThemeText>
+			<Link href='/register' style={styles.link}>
+				<ThemeText>Go to Register</ThemeText>
+			</Link>
+			<Link href='/profile' style={styles.link}>
+				<ThemeText>Profile</ThemeText>
 			</Link>
 		</ThemeView>
 	);
